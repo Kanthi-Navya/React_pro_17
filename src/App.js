@@ -3,16 +3,17 @@ import './App.css';
 import Menu from './components/MenuComponent';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Calculator from './components/Calculator/CalculatorComponent';
+import ContactFrom from './components/contactform/ContactFormComponent';
 function App() {
   return (
     <Router>
       <div className="App">
-      <Navbar />  
+      <Navbar /> 
+     
       <div className="content">
         <Switch>
           <Route exact path="/calc">
-            <Calculator />
+          <ContactFrom />
           </Route>
           <Route exactpath="/menu">
             <Menu />

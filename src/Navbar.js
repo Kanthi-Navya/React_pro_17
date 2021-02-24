@@ -8,7 +8,7 @@ const Navbar = () => {
                 <h2>Ristorante Con Fusion</h2>
                 <Button color="link">
                     <Link to='/calc'>
-                        Calculator
+                        Contact
                     </Link>
                 </Button>
                 <Button color="success">
