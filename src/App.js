@@ -1,20 +1,31 @@
 import './App.css';
-import { Navbar, NavbarBrand } from 'reactstrap';
+// import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './components/MenuComponent';
-import Dishdetail from './components/DishdetailComponent';
+import Navbar from './Navbar';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Calculator from './components/Calculator/CalculatorComponent';
 function App() {
   return (
-    
+    <Router>
       <div className="App">
-      <Navbar dark color= "primary">
-        <div className="container">
-          <NavbarBrand href = "/">Ristorante Con Fusion</NavbarBrand>
-        </div>
-      </Navbar>  
-      <Menu />
+      <Navbar />  
+      <div className="content">
+        <Switch>
+          <Route exact path="/calc">
+            <Calculator />
+          </Route>
+          <Route exactpath="/menu">
+            <Menu />
+          </Route>
+        </Switch>
+      </div>
       
+     
+
      {/* <Dishdetail /> */}
     </div>
+    </Router>
+      
 
   );
 }

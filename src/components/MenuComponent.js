@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 import { DISHES } from '../Dishes';
 import { Container, Row, Col } from 'reactstrap';
@@ -60,7 +60,7 @@ return(
                 <Col xs="3" sm="3"> {dish.description} </Col>
 
                 <Col xs="3" sm="3">
-                    <img width="250px" src={dish.image} alt="Card image cap" />
+                    <img width="250px" src={dish.image} alt="Card imagee cap" />
                 </Col>
                 {/* <CardImg width="10%" height="250px" src={dish.image} alt={dish.name} /> */}
                 <hr/>

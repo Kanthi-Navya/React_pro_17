@@ -13,5 +13,17 @@ code {
 }
 .dishesRow {
   padding: 6px;
-  
 }
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h2 {
+  color: #f1356d;
+}
+

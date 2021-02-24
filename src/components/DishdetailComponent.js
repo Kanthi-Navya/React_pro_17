@@ -1,7 +1,7 @@
 import React from 'react';
-import {UserContext} from './MenuComponent';
-import { Container, Row, Col } from 'reactstrap';
-import { DISHES } from '../Dishes';
+// import {UserContext} from './MenuComponent';
+// import { Container, Row, Col } from 'reactstrap';
+// import { DISHES } from '../Dishes';
 
 // import Menu from './MenuComponent';
 // import { DISHES } from '../Dishes';
