@@ -7,13 +7,18 @@ const Navbar = () => {
             <div className="container">
                 <h2>Ristorante Con Fusion</h2>
                 <Button color="link">
-                    <Link to='/calc'>
+                    <Link to='/contact'>
                         Contact
                     </Link>
                 </Button>
                 <Button color="success">
                     <Link to='/menu'>
                       Menu
+                    </Link>
+                </Button>
+                <Button color="success">
+                    <Link to='/toggle'>
+                      toggle
                     </Link>
                 </Button>
             </div>

@@ -10,34 +10,13 @@ import Dishdetail from './DishdetailComponent';
 // import { useState } from 'react';
 
 const Menu = () => {
-
-    // const[dish, setDishes] = useState(DISHES);
-
-    // console.log(dish, "use state");
+    console.log("menu component");
     
-    //     {
-    //         id: 0,
-    //         name:'Uthappizza',
-    //     },
-    // ]);
-// console.log(DISHES);
-
-
-
-
 
 const dishImgSelect = (id) => {
     console.log("dish image clicked");
     const selectedDish = DISHES.filter(dish => dish.id === id);
     console.log(selectedDish[0], "selected dish");
-    // Dishdetail(selectedDish[0]);
-    // setDishes(selectedDish);
-    //  return(
-    //     <div>
-    //         <Dishdetail />
-    //     </div>
-    //  );
-    
     // return(
         <div>
            <Dishdetail dish={Dishdetail(selectedDish[0])} />

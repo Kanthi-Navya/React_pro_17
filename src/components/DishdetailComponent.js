@@ -7,7 +7,6 @@ import React from 'react';
 // import { DISHES } from '../Dishes';
 // const Dishdetail = (dish) => {
  function Dishdetail(props){
-     debugger
     console.log(props.id, "dish dfetail");
     // const checkDish= ()=> {
     //     const found = DISHES.find(dishes => dishes.id === dish.id);
