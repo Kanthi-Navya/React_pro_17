@@ -30,3 +30,8 @@ code {
 .calcCenter {
 padding-left: 40%;
 }
+.folderImg {
+  width: 250px;
+  height: 250px;
+  padding: 5px;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Images from '../AddjsonData/ImagesComponent';
 
 function Square(props) {
     return (
@@ -106,16 +107,27 @@ function Square(props) {
       }
   
       return (
-        <div className="game">
-          <div className="game-board">
-            <Board
-              squares={current.squares}
-              onClick={i => this.handleClick(i)}
-            />
-          </div>
-          <div className="game-info">
-            <div>{status}</div>
-            <ol>{moves}</ol>
+        <div class="container">
+          <div class="row" >
+          <div class="col-sm-9">
+              <Images />
+            </div>
+            <div class="col-sm-3">
+
+              <div className="game">
+                <div className="game-board">
+                  <Board
+                    squares={current.squares}
+                    onClick={i => this.handleClick(i)}
+                  />
+                </div>
+                <div className="game-info">
+                  <div>{status}</div>
+                  <ol>{moves}</ol>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       );
@@ -124,7 +136,7 @@ function Square(props) {
   
   // ========================================
   
-  ReactDOM.render(<Game />, document.getElementById("root"));
+  // ReactDOM.render(<Game />, document.getElementById("root"));
   
   function calculateWinner(squares) {
     const lines = [
