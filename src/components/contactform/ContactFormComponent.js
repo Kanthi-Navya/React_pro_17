@@ -19,7 +19,7 @@ export default function ContactForm() {
                     <InputGroup>
                         <Label for="exampleName" sm={2}>Name</Label>
                         <Col sm={10}>
-                            <Input placeholder="username" type="text" name="name" id="exampleName" placeholder="with a placeholder" />
+                            <Input placeholder="username" type="text" name="name" id="exampleName" placeholder="with a placeholder fg" />
                         </Col>
                     </InputGroup>
                 </FormGroup>

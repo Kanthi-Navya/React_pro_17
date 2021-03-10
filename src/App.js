@@ -4,8 +4,6 @@ import Menu from './components/MenuComponent';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ContactFrom from './components/contactform/ContactFormComponent';
-import Calculator from './components/calculator/CalculatorComponent';
-import Game from './components/Game/GameComponent';
 import Toggles from './components/TogglesComponent';
 function App() {
   return (

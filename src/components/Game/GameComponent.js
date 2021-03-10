@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Images from '../AddjsonData/ImagesComponent';
 
 function Square(props) {
@@ -36,7 +35,7 @@ function Square(props) {
           <div className="board-row">
             {this.renderSquare(6)}
             {this.renderSquare(7)}
-            {this.renderSquare(8)}
+            {this.renderSquare(8)}Col xs="3"
           </div>
         </div>
       );

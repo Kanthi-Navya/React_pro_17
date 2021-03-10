@@ -21,6 +21,7 @@ const Navbar = () => {
                       toggle
                     </Link>
                 </Button>
+                
             </div>
         </nav>
     );

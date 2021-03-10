@@ -1,5 +1,5 @@
 // import "../../images"
-import {Container, Row, Col} from 'reactstrap';
+import React from 'react';
 const Images = () => {
 	var img_arr = [];
 	for (var i = 1; i < 10; i++) {
@@ -12,9 +12,12 @@ const Images = () => {
 			<div>
 				{img_arr.map((dish, key) => {
 					return (
-						<img width="250px" src={dish.default} alt="Card imagee cap" class="folderImg" />
+					 <>
+						<img  width="250px" src={dish.default} alt="Card imagee cap" className="folderImg" />
+					</>
 					);
 				})}
+				
 			</div>
 
 		</>
