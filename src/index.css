@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 }
-img {
+.imageSize {
   width: 250px;
   height: 250px;
   
@@ -24,9 +24,10 @@ code {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  background-color: black;
+  padding: 2px;
 }
 .navbar h2 {
   color: #f1356d;
@@ -41,7 +42,7 @@ padding-left: 40%;
   padding: 5px;
 }
 .content{
-  background: #d5dcee;
+  background: #ffffff;
   
 }
 .bdy{
@@ -58,4 +59,18 @@ padding-left: 40%;
 h5{
   color: #000;
   font-weight: 700px;
+}
+.btnFont {
+  color: #ffffff;
+  font-size: medium;
+  font-weight: bold;
+}
+.contactForm {
+  padding: 25px;
+  /* border: 1px solid #f2f2f2; */
+  color: aliceblue;
+
+}
+.wallPaperImg {
+  width: min-content;
 }

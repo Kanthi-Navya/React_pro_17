@@ -35,7 +35,7 @@ function Square(props) {
           <div className="board-row">
             {this.renderSquare(6)}
             {this.renderSquare(7)}
-            {this.renderSquare(8)}Col xs="3"
+            {this.renderSquare(8)}
           </div>
         </div>
       );

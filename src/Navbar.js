@@ -4,21 +4,33 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <div className="container">
-                <h2>Ristorante Con Fusion</h2>
+            <div>
+                <h2> 𝓷ⓐ𝓥ץค </h2>
+               </div>
+               <div>
                 <Button color="link">
-                    <Link to='/contact'>
-                        Contact
+                    <Link to='/menu' className="btnFont">
+                      MENU
                     </Link>
                 </Button>
-                <Button color="success">
-                    <Link to='/menu'>
-                      Menu
+                <Button color="link" >
+                    <Link to='/contact' className="btnFont">
+                        ABOUT
                     </Link>
                 </Button>
-                <Button color="success">
-                    <Link to='/toggle'>
-                      toggle
+                <Button color="link" >
+                    <Link to='/contact' className="btnFont">
+                        CONTACT
+                    </Link>
+                </Button>
+                <Button  color="link">
+                    <Link to='/sorting' className="btnFont">
+                      Sorting
+                    </Link>
+                </Button>
+                <Button  color="link">
+                    <Link to='/toggle' className="btnFont">
+                      TOGGLE
                     </Link>
                 </Button>
                 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Label, Input, FormText, Row } from 'reactstrap';
 import { Container } from 'reactstrap';
 import { InputGroup } from 'reactstrap';
 import {CKEditor} from '@ckeditor/ckeditor5-react';
@@ -10,16 +10,25 @@ export default function ContactForm() {
         setData(editor.getData());
     }
     return (
-    <div>
-        <div>
+    <div xs="12">
+        <Row>
+        <Col xs="6">
+            <div>
+             <img src="https://images.unsplash.com/photo-1540104751685-761c740a2208?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" alt=" not found" className = "wallPaperImg"/>
+            </div>
+        </Col>
+        
+       
+        <Col xs="6">
         <Container>
+            <div className="contactForm">
             <h1>Contact</h1>
             <Form>
                 <FormGroup row>
                     <InputGroup>
                         <Label for="exampleName" sm={2}>Name</Label>
                         <Col sm={10}>
-                            <Input placeholder="username" type="text" name="name" id="exampleName" placeholder="with a placeholder fg" />
+                            <Input placeholder="username" type="text" name="name" id="exampleName"  />
                         </Col>
                     </InputGroup>
                 </FormGroup>
@@ -67,11 +76,13 @@ export default function ContactForm() {
                     </Col>
                 </FormGroup>
             </Form>
+            </div>
         </Container>
         
-        </div>
-
         
+        </Col>
+        </Row>
         </div>
+       
     );
 }
