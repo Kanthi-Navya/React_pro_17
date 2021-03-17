@@ -4,6 +4,7 @@ import Game from './Game/GameComponent';
 // import Calculator from './calculator/CalculatorComponent';
 import ImagesJson from './AddjsonData/ImagesJsonComponent';
 const Toggles = () => {
+    debugger
     const [toggleState, setToggleState] = useState("game");
     
     function toggle () {

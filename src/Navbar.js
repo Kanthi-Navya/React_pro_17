@@ -8,6 +8,7 @@ const Navbar = () => {
                 <h2> 𝓷ⓐ𝓥ץค </h2>
                </div>
                <div>
+               
                 <Button color="link">
                     <Link to='/menu' className="btnFont">
                       MENU
@@ -25,7 +26,7 @@ const Navbar = () => {
                 </Button>
                 <Button  color="link">
                     <Link to='/sorting' className="btnFont">
-                      Sorting
+                      SORTING 
                     </Link>
                 </Button>
                 <Button  color="link">
@@ -33,6 +34,9 @@ const Navbar = () => {
                       TOGGLE
                     </Link>
                 </Button>
+                <div>
+                
+                </div>
                 
             </div>
         </nav>
