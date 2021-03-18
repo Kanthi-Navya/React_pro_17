@@ -74,3 +74,18 @@ h5{
 .wallPaperImg {
   width: min-content;
 }
+.sorting-styling{
+  width: 100%;
+  margin: 2% 5%;
+
+}
+.total{
+  margin: 0.4em;
+}
+.shadow-box-example {
+  height: 120px;
+  width: 100%;
+  background-color: #64b5f6;
+  padding: 0.3em;
+  box-shadow: #65baf6 1px 1px 3px 2px;
+}
