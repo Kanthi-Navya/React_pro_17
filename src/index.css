@@ -16,8 +16,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.dishesRow {
-  padding: 6px;
+.dishList {
+  display: inline-block;
+  width: 250px;
 }
 
 .navbar {
@@ -75,9 +76,12 @@ h5{
   width: min-content;
 }
 .sorting-styling{
-  width: 100%;
+  width: 70%;
   margin: 2% 5%;
 
+}
+.twitter {
+  width:30%;
 }
 .total{
   margin: 0.4em;
@@ -88,4 +92,128 @@ h5{
   background-color: #64b5f6;
   padding: 0.3em;
   box-shadow: #65baf6 1px 1px 3px 2px;
+}
+
+
+
+
+/* Twitter */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.apps{
+  background: #f0f0f0;
+  width:100%;
+  height:960px;
+  display: block;
+}
+.section{
+  width: 30%;
+  display: inline;
+}
+.app{
+  display: inline-block;
+  float: right;
+  border: 1px solid white;
+  border-radius: 12px;
+  background: #F7F9FA;
+  margin: 20px;
+}
+.suggestions-head{
+  padding: 15px 12px 5px;
+  border-bottom: 1px solid #e3e3e3;
+/*   width: 380px;
+  border: 1px solid white;
+  padding: 20px;
+  background: white; */
+/*   text-align: center; */
+}
+span, p{
+    color: #D05716;
+    margin: 0 6px;
+  font-size: 14px;
+}
+h5{
+  font-family: Verdana, Helvetica, sans-serif;
+  display: inline-block;
+  margin: 0 8px;
+}
+hr{
+  padding: 0; 
+  margin-bottom: 0.2em;
+  margin-top: 0px;
+  
+}
+.suggestions{
+  padding: 7px 20px 0px;
+  height: 85px;
+  border-bottom: 1px solid #EBEEF0;
+  &:hover{
+    background: #ebf0f5;
+  }
+}
+.user-image{
+  display: inline-block;
+  height: 66px;
+  padding-top: 0px;
+  margin-top:0px;
+}
+.user-image img{
+  width: 4.1em;
+  border-radius: 50%;
+}
+.users{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  width: 40%;
+}
+.user-details{
+  display: display;
+  display: inline;
+  margin-top: 10px;
+  .name{
+    color: black;
+    font-size: 17px;
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .username{
+    color: #7c7c7c;
+    font-size: 17px;
+    margin-left: 0;
+    width: 80px;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.follow{
+  width: 20%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 5%;
+  margin-bottom:0;
+  margin-left: 4%;
+  
+}
+.follow-link{
+  color: #1da1f2;
+  border: 1px solid #1da1f2;
+  border-radius: 15px;
+  padding: 6px 18px;
+  &:hover{
+    background: #1da1f226;
+    color: #1da1f2;
+  }
+}
+.follow button{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial;
+  color: none;
 }

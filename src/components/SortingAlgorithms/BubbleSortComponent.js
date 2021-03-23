@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Button } from 'reactstrap';
-
+import { Button, Row } from 'reactstrap';
+import Twitter from '../Hooks/TwitterComponent';
+import Changedata from '../Hooks/ChangedataComponent';
 const BubbleSort = () => {
     var n;
     const [bubble, setbubble] = useState(null);
@@ -24,15 +25,16 @@ const BubbleSort = () => {
     }
     const Sort = () => {
         var arr = [];
-        while (arr.length < 10) {
+        while (arr.length < 20) {
             var r = Math.floor(Math.random() * 100) + 1;
-            if(r < 10) {
-                r = "0"+r;
-            }
-            console.log(r, "r value");
+            // if(r < 10) {
+            //     r = "0"+r;
+            // }
+            // console.log(r, "r value");
             
             if (arr.indexOf(r) === -1) arr.push(r);
         }
+        
         console.log(arr);
         setbubble(arr);
         
@@ -51,9 +53,11 @@ const BubbleSort = () => {
         );
     }
     const QuickSorrAlg=(bubble) => {
-      console.log(bubble);
-      console.log(bubble.sort(),  "bubble sorting");
-      sortedNum = bubble.sort();
+    //   console.log(bubble);
+    //   console.log(bubble.sort(),  "bubble sorting");
+    
+        debugger
+      sortedNum = bubble.sort(function(a, b){return a-b});
       setsortedNum(sortedNum);
     };
     const ReduceFunctionSum = (props) => {
@@ -73,7 +77,9 @@ const BubbleSort = () => {
         
     };
     return (
-        <div className="sorting-styling">
+        <div class="col-sm-12">
+        <Row>
+        <div className="sorting-styling" class="col-sm-5">
             <Button onClick={Sort}>
                 Elements
            </Button>
@@ -88,6 +94,14 @@ const BubbleSort = () => {
             </div>
             {bubble && <Placbuttons />}
             {bubble && <ReduceFunctionSum numSum={bubble} />}
+        </div>
+        <div className="twitter" class="col-sm-4">
+            <Twitter />
+        </div>
+        <div class="col-sm-3">
+            <Changedata />
+        </div>
+        </Row>
         </div>
     );
 }

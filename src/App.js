@@ -20,6 +20,7 @@ function App() {
           </Switch>
         </div>
         <div className="footer">
+          
           <h6>footer</h6>
         </div>
       </div>

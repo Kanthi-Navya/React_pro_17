@@ -1,81 +1,40 @@
 import React from 'react';
-// import { useState } from 'react';
-
 import { DISHES } from '../Dishes';
-import { Container, Row, Col, Button } from 'reactstrap';
-import Dishdetail from './DishdetailComponent';
-import BubbleSort from './SortingAlgorithms/BubbleSortComponent'
-// import { CardImg } from 'reactstrap';
-
-// import { useState } from 'react';
-
+import { CardSubtitle, Card, CardText, CardTitle, CardBody, CardImg, Button } from 'reactstrap';
+import  { useState } from 'react';
 const Menu = () => {
-    console.log("menu component");
-   var selectedDish;
-
-const dishImgSelect = (id) => {
-    console.log("dish image clicked");
-     selectedDish = DISHES.filter(dish => dish.id === id);
-    console.log(selectedDish[0], "selected dish");
-    
+	var [dishes, setDishes] = useState(DISHES);
+	// setDishes(dishes);
+	// var [updateDish, setupdateDish] = useState();
+	console.log("menu component");
+	// var selectedDish;
+	const dishImgSelect = (id) => {
+		console.log("dish image clicked");
+		dishes = DISHES.filter(dish => dish.id === id);
+		console.log(dishes, "selected dish");
+		setDishes(dishes);
+	}
+	const itemComments =(dishes) => {
+		console.log(dishes, "item Comments");
+		
+	}
+	return (
+		<div>{DISHES.map((dish, key) => {
+			return (
+				<div key={key} onClick={() => { dishImgSelect(dish.id) }} className="dishList"  >
+					<Card>
+						<CardImg src={dish.image} alt="Card image cap"/>
+						<CardBody>
+							<CardTitle tag="h5">{dish.name}</CardTitle>
+							<CardSubtitle tag="h6" className="mb-2 text-muted">{dish.category}</CardSubtitle>
+							<CardText>{dish.description}</CardText>
+							<Button onClick={()=>itemComments(dishes)}>Button</Button>
+						</CardBody>
+					</Card>
+				</div>
+			);
+		})}
+		</div>
+	);
 }
-// console.log(selectedDish, "kdjgh----");
-const sorting =() => {
-    console.log("button clicked");
-    return (
-        <BubbleSort /> 
-
-    );
-}
-   
-return(
-<>
-    <div>
-       <Button onClick={sorting}>
-          
-       </Button>
-    </div>
-<div>{DISHES.map((dish, key) => {
-    return(
-        <div>
-            
-     <Container>
-          <div key={key} className="dishesRow shadow-lg p-3 mb-5 bg-light rounded"  onClick= {() => {dishImgSelect(dish.id)}}  >
-            <Row>
-                <Col xs="3" sm="3">{dish.id} </Col>
-                <Col xs="3" sm="3">{dish.category} </Col>
-                <Col xs="3" sm="3"> {dish.description} </Col>
-
-                <Col xs="3" sm="3">
-                    <img width="250px" src={dish.image} alt="Card imagee cap" />
-                </Col>
-                {/* <CardImg width="10%" height="250px" src={dish.image} alt={dish.name} /> */}
-                <hr/>
-            </Row>
-        </div>
-        <div>
-        
-        </div>
-        
-     </Container>
-   <div>
-     {selectedDish && <Dishdetail selectedDish={selectedDish}/>}
-   </div> 
-     </div>
-
-     );
-    
-})}
-</div> 
-
-{/* <div onClick={() =>setDishes(dish) }>
-    <Dishdetail dish={dish}/>
-</div> */}
-
-</>
-
-);
-    
-}
- 
 export default Menu;
