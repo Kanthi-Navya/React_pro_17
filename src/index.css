@@ -217,3 +217,8 @@ hr{
   font-family: Arial;
   color: none;
 }
+/* File upload */
+.imgPreview {
+  width: 250px;
+  height: 250px;
+}

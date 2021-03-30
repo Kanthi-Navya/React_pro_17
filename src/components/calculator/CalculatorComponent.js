@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { BrowserRouter as Router, Route, Link, NavLink, withRouter, Redirect} from 'react-router-dom';
+import { configure } from 'axe-core';
 
 // import { Button, ButtonGroup, ButtonToolbar, Input } from 'reactstrap';
 // const Calculator = () => {

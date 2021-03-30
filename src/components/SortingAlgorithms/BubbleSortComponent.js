@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Row } from 'reactstrap';
 import Twitter from '../Hooks/TwitterComponent';
-import Changedata from '../Hooks/ChangedataComponent';
+import FileUpload from '../Hooks/FileUploadComponent';
 const BubbleSort = () => {
     var n;
     const [bubble, setbubble] = useState(null);
@@ -99,7 +99,7 @@ const BubbleSort = () => {
             <Twitter />
         </div>
         <div class="col-sm-3">
-            <Changedata />
+            <FileUpload />
         </div>
         </Row>
         </div>
