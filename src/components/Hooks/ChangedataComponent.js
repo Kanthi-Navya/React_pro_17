@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {Button} from 'reactstrap';
 const Changedata = () => {
-var stat;
     const [status, setStatus] = useState([
         {
             id: 1,
@@ -18,29 +17,10 @@ var stat;
             update: "Following" 
         }
     ]);
-    const updateStatus=(value) => {
-        stat = value.update;
-        console.log(stat);
-        
-        setStatus()
-        
-        
-        
-    }
-    return(
-       
-        status.map((value)=>{
-            
-            return ( 
-        
-                <div>
-                    <Button onClick={()=> updateStatus(value)} key={value.id}>{value.update}</Button>
-                </div>
-             );
-             
-        })
-       
-    );
+    
+  return(
+    <p>hfdgh</p>
+  );
 
     
 }
