@@ -21,7 +21,13 @@ code {
   width: 250px;
 }
 
-.navbar {
+.navbar {.para_test {
+  
+  display: inline;
+  font-family: sans-serif;
+    text-align: center;
+    
+}
   padding: 20px;
   display: flex;
   align-items: center;
@@ -221,4 +227,47 @@ hr{
 .imgPreview {
   width: 250px;
   height: 250px;
+}
+
+
+/* About */
+.test2 {
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    position: relative;
+    background-image: url("https://wallpapercave.com/wp/wp1828929.jpg");
+}
+.para_test h4{
+  
+    color: #fff;
+    display: inline;
+    padding: 1%;
+    color: #fff;
+    text-transform: uppercase;
+    word-spacing: 1%;
+    font-family: sans-serif;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    line-height: 1.6;
+    transform: translate(-50%, -50%);
+}
+.test2 h1 {
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    display: inline;
+    padding: 1%;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

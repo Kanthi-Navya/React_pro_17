@@ -1,6 +1,6 @@
 import React from 'react';
 import Images from '../AddjsonData/ImagesComponent';
-
+// import SnakeGame from '../Game/SnakeGameComponent';
 function Square(props) {
     return (
       <button className="square" onClick={props.onClick}>
@@ -125,6 +125,8 @@ function Square(props) {
                   <ol>{moves}</ol>
                 </div>
               </div>
+
+              {/* <SnakeGame /> */}
             </div>
             
           </div>

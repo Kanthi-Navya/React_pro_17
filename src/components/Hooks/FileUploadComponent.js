@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Link } from 'react-router-dom';
+// import FilesUpload from '../FilesUpload/FilesUploadComponent';
+import {Button} from 'reactstrap';
 const FileUpload = () => {
 
  const [state, setState] = useState({
@@ -28,7 +31,7 @@ const FileUpload = () => {
     let {imagePreviewUrl} = state;
     let $imagePreview = null;
     if (imagePreviewUrl) {
-        $imagePreview = (<img src={imagePreviewUrl} className="imgPreview" /> );
+        $imagePreview = (<img src={imagePreviewUrl} alt="alternatee" className="imgPreview"/> );
        
       } else {
         $imagePreview = (<div className="previewText">Please select an Image for Preview</div>);
@@ -51,12 +54,17 @@ const FileUpload = () => {
 					<p>Filename: {state.file.name}</p>
 					<p>Filetype: {state.file.type}</p>
 					<p>Size in bytes: {state.file.size}</p>
-					{/* <p>
-						lastModifiedDate:{' '}
-						{state.file.lastModifiedDate.toLocaleDateString()}
-					</p> */}
 				</div>
-                
+                <div>
+                    Multiple File Upload
+                    
+                    <Button color="link">
+                    <Link to='/uploads'>
+                       Click Here
+                    </Link>
+                </Button>
+                    
+                </div>
             </div>
         </div>
     );

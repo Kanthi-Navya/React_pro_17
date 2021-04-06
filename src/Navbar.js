@@ -1,6 +1,6 @@
 import { Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
-
+import About from './components/AboutComponent'
 const Navbar = () => {
     return (
         <nav className="navbar">
@@ -15,7 +15,7 @@ const Navbar = () => {
                     </Link>
                 </Button>
                 <Button color="link" >
-                    <Link to='/contact' className="btnFont">
+                    <Link to='/About' className="btnFont">
                         ABOUT
                     </Link>
                 </Button>
