@@ -1,6 +1,6 @@
 import { Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import About from './components/AboutComponent'
+// import About from './components/AboutComponent'
 const Navbar = () => {
     return (
         <nav className="navbar">

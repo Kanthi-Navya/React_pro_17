@@ -81,7 +81,7 @@ const userList = [
      userList.map((index)=>{       
        if(index.id===userStatus.id){
          List.push(userStatus);
-         // console.log(userStatus);
+         console.log(userStatus);
        }
        else {
          List.push(index);

@@ -1,17 +1,19 @@
-import { Row, Button } from 'reactstrap';
-
+import { Row, Button} from 'reactstrap';
+import React, { useState } from 'react';
+import CardDetails from './Details/CardDetailsComponent'
+import PersonalInfo from './Details/PersonalInfoComponent';
 const About = () => {
 
-
-var state = 0;
+const [state, setState] = useState(0);
   const HandleClick=()=> {
-   state = 1;
+    setState(1);
     console.log("handle clicked ", state);
     return (
       <div>
-        <div className="test2">
-          <h1>KANTHI NAVYA RANI</h1>
-        </div>
+        <br /><br />
+        <CardDetails />
+        <PersonalInfo />
+        <br />
       </div>
     );
   }
@@ -20,8 +22,8 @@ var state = 0;
       <Row>
         <div className="test2">
           <h1>KANTHI NAVYA RANI</h1>
-        </div>
-        <div className="para_test">
+        
+          <div className="para_test">
           <h4 >I'm an enthusiastic, responsible and hard working IT person. Being worked for different projects helped me to adopt to the changes quickly and made me a mature team worker. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.
           
           <br/>
@@ -31,10 +33,10 @@ var state = 0;
           </h4>
           
         </div>
-        
+        </div>
       </Row>
       <div>
-         
+         {state && <HandleClick />}
       </div>
     </div>
   );

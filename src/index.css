@@ -134,11 +134,11 @@ h5{
   background: white; */
 /*   text-align: center; */
 }
-span, p{
+/* span, p{
     color: #D05716;
     margin: 0 6px;
   font-size: 14px;
-}
+} */
 h5{
   font-family: Verdana, Helvetica, sans-serif;
   display: inline-block;
@@ -237,12 +237,15 @@ hr{
     background-size: cover;
     position: relative;
     background-image: url("https://wallpapercave.com/wp/wp1828929.jpg");
+    /* background-size: contain; */
+  padding: 5%;
 }
 .para_test h4{
   
     color: #fff;
     display: inline;
     padding: 1%;
+    margin: 5%;
     color: #fff;
     text-transform: uppercase;
     word-spacing: 1%;
@@ -270,4 +273,38 @@ hr{
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.cardGap {
+  margin: 25px;
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+}
+.zoom {
+  
+  background-color: green;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.text_family {
+  font-family:Helvetica;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+}
+.mydetails {
+  font-family:Helvetica;
+  font-weight: 600;
+  color: lightseagreen;
+  text-align: left;
 }
