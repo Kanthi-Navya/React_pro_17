@@ -37,6 +37,43 @@ const PersonalInfo = () => {
                     </Col>
                     <Col xs="6">
                         <div className="text_family">SOME SKILLS</div>
+                        <Table borderless>
+                            <thead>
+                                <tr>
+                                    <th>HTML</th>
+                                    <th> <input
+                                        type="range"
+                                        min="0" max="100" value="90" step="10" disabled />
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">CSS</th>
+                                    <td><input
+                                        type="range"
+                                        min="0" max="100" value="90" step="10" disabled /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">REACT</th>
+                                    <td><input
+                                        type="range"
+                                        min="0" max="100" value="90" step="10" disabled /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">JAVASCRIPT</th>
+                                    <td><input
+                                        type="range"
+                                        min="0" max="100" value="90" step="10" disabled /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ANGULARJS</th>
+                                    <td><input
+                                        type="range"
+                                        min="0" max="100" value="90" step="10" disabled /></td>
+                                </tr>
+                            </tbody>
+                        </Table>
                     </Col>
                 </Row>
             </Container>
