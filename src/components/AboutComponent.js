@@ -2,6 +2,7 @@ import { Row, Button} from 'reactstrap';
 import React, { useState } from 'react';
 import CardDetails from './Details/CardDetailsComponent'
 import PersonalInfo from './Details/PersonalInfoComponent';
+import ImageSticky from './Details/ImageStickyComponent';
 const About = () => {
 
 const [state, setState] = useState(0);
@@ -13,6 +14,7 @@ const [state, setState] = useState(0);
         <br /><br />
         <CardDetails />
         <PersonalInfo />
+        <ImageSticky />
         <br />
       </div>
     );

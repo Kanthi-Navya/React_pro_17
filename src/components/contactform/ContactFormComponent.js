@@ -9,6 +9,7 @@ export default function ContactForm() {
     const handleChange = (e, editor) => {
         setData(editor.getData());
     }
+    
     return (
     <div xs="12">
         <Row>
@@ -24,7 +25,7 @@ export default function ContactForm() {
             <div className="contactForm">
             <h1>Contact</h1>
             <Form>
-                <FormGroup row>
+                <FormGroup row>handleSubmit
                     <InputGroup>
                         <Label for="exampleName" sm={2}>Name</Label>
                         <Col sm={10}>
@@ -35,7 +36,7 @@ export default function ContactForm() {
                 <FormGroup row>
                     <Label for="exampleEmail" sm={2}>Email</Label>
                     <Col sm={10}>
-                        <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                        <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder"  />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
@@ -44,7 +45,7 @@ export default function ContactForm() {
                     <Col sm={10}>
                         <CKEditor
                             editor={ClassicEditor}
-                            onChange={(e, editor) => { handleChange(e, editor) }} />
+                            onChange={(e, editor) => { handleChange(e, editor) }} value="ckeditor"/>
                     </Col>
                 </FormGroup>
                 
@@ -52,7 +53,7 @@ export default function ContactForm() {
                     <Label for="exampleFile" sm={2}>File</Label>
                     <Col sm={10}>
                         <Input type="file" name="file" id="exampleFile" />
-                        <FormText color="muted">
+                        <FormText color="muted" value="exampleFile" >
                             This is some placeholder block-level help text for the above input.
                             It's a bit lighter and easily wraps to a new line.
                         </FormText>
@@ -72,7 +73,7 @@ export default function ContactForm() {
                 </FormGroup>
                 <FormGroup check row>
                     <Col sm={{ size: 10, offset: 2 }}>
-                        <Button>Submit</Button>
+                        <Button> Submit</Button>
                     </Col>
                 </FormGroup>
             </Form>

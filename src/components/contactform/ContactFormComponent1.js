@@ -7,7 +7,12 @@ import { InputGroup } from 'reactstrap';
 // import CKEditor from '@ckeditor/ckeditor5-react';
 
 const ContactForm = () => {
-    
+    const [state, setstate] = useState({
+        value:''});
+    const handleChange = () => {
+        setState({value: event.target.value})
+        console.log(state, "input value");
+    }
 
     return ( 
         <div>
@@ -18,7 +23,7 @@ const ContactForm = () => {
                         <InputGroup>
                             <Label for="exampleName" sm={2}>Name</Label>
                             <Col sm={10}>
-                                <Input placeholder="username" type="text" name="name" id="examplename" placeholder="with a placeholder" />
+                                <Input placeholder="username" type="text" name="name" id="examplename" placeholder="with a placeholder" onChange={()=>handleChange()}/>
                             </Col>
                         </InputGroup>
                     </FormGroup>

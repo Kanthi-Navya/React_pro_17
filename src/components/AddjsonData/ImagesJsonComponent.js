@@ -28,7 +28,7 @@ const ImagesJson = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:8000/Images')
+        fetch('http://localhost:3200/Images')
             .then(response => response.json())
             .then((data) => {
                 // console.log(data);

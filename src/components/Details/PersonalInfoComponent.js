@@ -43,7 +43,7 @@ const PersonalInfo = () => {
                                     <th>HTML</th>
                                     <th> <input
                                         type="range"
-                                        min="0" max="100" value="90" step="10" disabled />
+                                        min="0" max="100" value="90" step="10" className="input_color" />
                                     </th>
                                 </tr>
                             </thead>
@@ -52,25 +52,26 @@ const PersonalInfo = () => {
                                     <th scope="row">CSS</th>
                                     <td><input
                                         type="range"
-                                        min="0" max="100" value="90" step="10" disabled /></td>
+                                        min="0" max="100" value="90" step="10" className="input_color"  /></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">REACT</th>
                                     <td><input
                                         type="range"
-                                        min="0" max="100" value="90" step="10" disabled /></td>
+                                        min="0" max="100" value="90" step="10"  className="input_color"  /></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">JAVASCRIPT</th>
                                     <td><input
                                         type="range"
-                                        min="0" max="100" value="90" step="10" disabled /></td>
+                                        min="0" max="100" value="90" step="10" id="javascript" className="input_color"  />
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">ANGULARJS</th>
                                     <td><input
                                         type="range"
-                                        min="0" max="100" value="90" step="10" disabled /></td>
+                                        min="0" max="100" value="90" step="10"  className="input_color"  /></td>
                                 </tr>
                             </tbody>
                         </Table>
